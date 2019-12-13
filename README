@@ -1,6 +1,7 @@
 自己实现机器学习中的经典算法并进行实例应用
 
 一.源代码说明
-1.kmeans_iris：基于iris数据集的k-means聚类
+1.kmeans_iris.py：应用于iris数据集的k-means聚类
+2.gauss_naive_bayes.py：应用于iris数据集的高斯朴素贝叶斯算法
 二.数据集说明
 1./datasets/iris：鸢尾花数据集
