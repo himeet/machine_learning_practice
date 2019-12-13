@@ -75,13 +75,13 @@ def kmeans(dataset, k, dist_measure=distance_euclidean, create_random_centroid=r
             result_set.iloc[:, -1] = result_set.iloc[:, -2]  # 当前点所在簇的编号成为了上一次簇的编号
         return centroids, result_set
 
-
 def main():
     dataset = load_data()
     k = 3
     centroids, result_set = kmeans(dataset, k)
-    print(centroids)
-    print(result_set)
+    print(centroids)  # 最终质心
+    print(result_set)  # 聚类最终结果
+    print(result_set.iloc[:, -1].value_counts())
 
 
 if __name__ == '__main__':
